@@ -1,9 +1,6 @@
 #include<iostream>
-
 using namespace std;
-
 int main(){
-	
 	int n;
 	cout<<"the the no fo students"<<endl;
 	cin>>n;
@@ -19,27 +16,27 @@ int main(){
 		cin>>marks[i][0]>>marks[i][1]>>marks[i][2]>>marks[i][3]>>marks[i][4];
 		percentage[i]=(marks[i][0]+marks[i][1]+marks[i][2]+marks[i][3]+marks[i][4])*0.2;
 	}
-	
 	for(int i =0;i<n;i++){
-		cout<<"\n Name :"<<name[i]<<endl;
+		cout<<roll[i]<<"  Name :"<<name[i]<<endl;
 		cout<<"grade :";
-	if(percentage[i]>80){
-		cout<<"A"<<endl;
+	if(percentage[i]>=80 && percentage[i]<=100){
+		cout<<"A\n"<<endl;
 	}	
-	else if(percentage[i]>70){
-		cout<<"B"<<endl;
+	else if(percentage[i]>=70){
+		cout<<"B\n"<<endl;
 	}
-	else if(percentage[i]>60){
-		cout<<"c"<<endl;
+	else if(percentage[i]>=60){
+		cout<<"c\n"<<endl;
 	}
-	else if(percentage[i]>32){
-		cout<<"passed"<<endl;
+	else if(percentage[i]>=32){
+		cout<<"passed\n"<<endl;
 	}
-	else {
-		cout<<"failed"<<endl;
+	else if(percentage[i]>=0){
+		cout<<"failed\n"<<endl;
 	}
+	else{
+		cout<<"invalid input\n"<<endl;
 	}
-	
-	
+	}	
 return 0;
 }
