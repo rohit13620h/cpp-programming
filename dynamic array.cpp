@@ -11,5 +11,4 @@ int main(){
 		sum+=arr[i];}
 	cout<<"the sum of the elements is : "<<sum<<endl;	
 	delete[] arr; 
-	arr = nullptr;
 return 0;}
